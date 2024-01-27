@@ -11,9 +11,9 @@ public class Start {
         AnnotationConfigApplicationContext contex = new AnnotationConfigApplicationContext();
         contex.scan("ru.pavlovets.spring_ripper");
         contex.refresh();
-        while (true) {
-            Thread.sleep(100);
-            contex.getBean(Quoter.class).sayQuote();
-        }
+
+//        Thread.sleep(100);
+//        contex.getBean(Quoter.class).sayQuote();
+
     }
 }
